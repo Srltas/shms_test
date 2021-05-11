@@ -30,6 +30,6 @@ public class TestController {
 	
 	@GetMapping("/test")
 	public String test() {
-		return "씨바랍서빗비ㅏㅓㅅ디ㅏ벋시ㅏㅂㅈㄷ러재ㅑㅓ";
+		return "ㄻㄴㅇㄻㄴㅇㄻㅈㄷㄹㅈㄷㄹ";
 	}
 }
