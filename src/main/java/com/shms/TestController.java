@@ -17,7 +17,7 @@ public class TestController {
 	public String getDate() {
 		return testService.getDate();
 	}
-	
+	// travis test
 	@GetMapping("/wear")
 	public List<WearLog> getWearLog() {
 		return testService.selectAll();
