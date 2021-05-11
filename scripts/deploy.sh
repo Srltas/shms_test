@@ -9,7 +9,7 @@ cp $REPOSITORY/zip/*.jar $REPOSITORY/
 
 ehco "> 현재 구동 중인 애플리케이션 pid 확인"
 
-CURRENT_PID=$(pgrep -f shms-0.0.1-SNAPSHOT |grep jar)
+CURRENT_PID=$(pgrep -f /$REPOSITORY/shms-0.0.1-SNAPSHOT |grep jar)
 
 echo "현재 구동 중인 애플리케이션 pid: $CURRENT_PID"
 
