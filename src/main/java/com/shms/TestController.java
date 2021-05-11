@@ -27,4 +27,9 @@ public class TestController {
 	public List<Worker> getWorker() {
 		return testService.workerAll();
 	}
+	
+	@GetMapping("test")
+	public String test() {
+		return "TEST";
+	}
 }
