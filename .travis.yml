@@ -46,7 +46,4 @@ deploy:
 notifications:
   email:
     recipients:
-      - bonjourKBW@gmail.com
       - coppermin.kim@gmail.com
-      - jgbu97@gmail.com
-      - proper.hong@gmail.com
