@@ -7,8 +7,6 @@ echo "> Build 파일 복사"
 
 cp $REPOSITORY/zip/*.jar $REPOSITORY/
 
-cd $REPOSITORY
-
 ehco "> 현재 구동 중인 애플리케이션 pid 확인"
 
 CURRENT_PID=$(pgrep -f shms-0.0.1-SNAPSHOT.jar)
