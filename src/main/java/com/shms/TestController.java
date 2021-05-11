@@ -30,6 +30,6 @@ public class TestController {
 	
 	@GetMapping("/test")
 	public String test() {
-		return "ㄻㄴㅇㄻㄴㅇㄻㅈㄷㄹㅈㄷㄹ";
+		return "제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발제발";
 	}
 }
