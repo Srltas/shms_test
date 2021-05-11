@@ -33,4 +33,4 @@ chmod +x $JAR_NAME
 
 echo "> $JAR_NAME 실행"
 
-java -jar $JAR_NAME
+nohup java -jar $JAR_NAME &
