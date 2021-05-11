@@ -20,4 +20,4 @@ script: ./mvnw clean package
 notifications:
         email:
                 recipients:
-                        - kdm97912@gamil.com
+                        - coppermin.kim@gmail.com
