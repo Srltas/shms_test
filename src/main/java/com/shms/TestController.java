@@ -28,7 +28,7 @@ public class TestController {
 		return testService.workerAll();
 	}
 	
-	@GetMapping("test")
+	@GetMapping("/test")
 	public String test() {
 		return "TEST";
 	}
