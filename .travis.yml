@@ -1,0 +1,23 @@
+language: java
+jdk:
+        - openjdk11
+
+branches:
+        only:
+                - master
+
+# Travis CI 서버의 Homcache:
+cache:
+        directories:
+                - '$HOME/.m2/'
+
+befor_install:
+        - chmod +x mvnw
+
+script: "./mvnw clean package"
+
+#CI 실행 완료 시 메일로 알림
+notifications:
+        email:
+                recipients:
+                        - coppermin.kim@gamil.com
