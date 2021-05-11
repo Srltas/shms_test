@@ -34,8 +34,26 @@ public class TestService {
 						rs.getString("IS_WEAR").charAt(0),
 						rs.getDouble("LATITUDE"),
 						rs.getDouble("LONGITUDE"));
-				return wearLog;
 				
+				return wearLog;
+			}
+		});
+		
+		return result;
+	}
+	
+	public List<Worker> workerAll() {
+		List<Worker> result = jdbcTemplate.query(wearLogSelectAll, new RowMapper<Worker>() {
+			@Override
+			public Worker mapRow(ResultSet rs, int rowNum) throws SQLException {
+				Worker worker = new Worker(
+						rs.getString("EMP_NUMBER"),
+						rs.getString("NAME"),
+						rs.getString("CARD_NUMBER"),
+						rs.getString("PHONE_NUMBER"),
+						rs.getString("IS_DELETE").charAt(0));
+				
+				return worker;
 			}
 		});
 		
