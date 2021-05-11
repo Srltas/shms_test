@@ -16,6 +16,7 @@ public class TestService {
 	
 	private String sql = "select sysdate()";
 	private String wearLogSelectAll = "select * from WEAR_LOG";
+	private String workerSelectAll = "select * from WORKER";
 	
 	public String getDate() {
 		return jdbcTemplate.queryForObject(sql, String.class);
@@ -43,7 +44,7 @@ public class TestService {
 	}
 	
 	public List<Worker> workerAll() {
-		List<Worker> result = jdbcTemplate.query(wearLogSelectAll, new RowMapper<Worker>() {
+		List<Worker> result = jdbcTemplate.query(workerSelectAll, new RowMapper<Worker>() {
 			@Override
 			public Worker mapRow(ResultSet rs, int rowNum) throws SQLException {
 				Worker worker = new Worker(
