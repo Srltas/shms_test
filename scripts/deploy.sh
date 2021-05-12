@@ -1,7 +1,7 @@
 #!/bin/bash
 
 REPOSITORY=/home/ec2-user/app/shms_project_step2
-PROJECT_NAME=shms-0.0.1-SNAPSHOT
+PROJECT_NAME=shms
 
 echo "> Build 파일 복사"
 
@@ -33,4 +33,4 @@ chmod +x $JAR_NAME
 
 echo "> $JAR_NAME 실행"
 
-nohup java -jar $JAR_NAME &
+nohup java -jar $JAR_NAME > $REPOSITORY/nohup.out 2> &1 &
