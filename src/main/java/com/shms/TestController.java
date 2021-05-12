@@ -30,6 +30,6 @@ public class TestController {
 	
 	@GetMapping("/test")
 	public String test() {
-		return "한번만...";
+		return "두번만...";
 	}
 }
