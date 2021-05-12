@@ -30,6 +30,6 @@ public class TestController {
 	
 	@GetMapping("/test")
 	public String test() {
-		return "그만";
+		return "CodeDeploy가 문제네...";
 	}
 }
